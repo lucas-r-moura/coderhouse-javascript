@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 - funções</title>
+</head>
+<body>
+    <script>
+        // calculadora de IPVA
+
+        // alert("Bem vindo a calculadora de IPVA")
+        // let precoCarro = parseInt(prompt("Qual é o valor da tabela FIPE do seu carro?"))
+        // let percentualIpva = parseInt(prompt("Qual é o percentual de IPVA da sua cidade? (digite apenas números)"))
+        // let percentualIpvaAjustado = percentualIpva/100
+        // let valorIpva = 0
+        
+        // function calcularIpva(precoCarro, percentualIpvaAjustado) {
+        //     valorIpva = precoCarro * percentualIpvaAjustado
+        //     console.log(valorIpva)
+            
+        // }
+
+        // calcularIpva(precoCarro, percentualIpvaAjustado)
+        // alert("Voce pagará de IPVA R$" + valorIpva)
+
+        //calculadora de consumo de gasolina
+        
+        alert("Bem vindo a calculadora de consumo de Gasolina mensal!")
+        let precoGasolina = parseInt(prompt("Digite o preço da gasolina da sua cidade:"))
+        let consumo = parseInt(prompt("Digite quantos kilometros seu carro faz com 1 litro de gasolina:"))
+        let kilometragemDiaria = parseInt(prompt("Digite quantos kilometros voce anda por dia?"))
+        let consumoTotal = 0
+        let kilometragemMensal = kilometragemDiaria * 30
+
+        function calcularConsumoGasolina () {
+            consumoTotal = kilometragemMensal / consumo * precoGasolina
+            
+        }
+        calcularConsumoGasolina(kilometragemMensal, consumo, precoGasolina)
+        console.log("Voce gastará no mes: R$" + consumoTotal + " de combustível.")
+    </script>
+</body>
+</html>
