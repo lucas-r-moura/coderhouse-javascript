@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio -  Inserir um ciclo no simulador</title>
+</head>
+<body>
+    <h1>Desafio -  Inserir um ciclo no simulador</h1>
+
+
+    <script>
+
+        alert("Bem vindo ao simulador de financiamento veicular")
+
+        let valorDoCarro = parseInt(prompt("Insira o valor do veiculo:"))
+        let entrada = parseInt(prompt("Gostaria de dar uma entrada, se sim, digite o valor, Se não, digite zero:"))
+        let numeroDeParcelas = parseInt(prompt("Insira o número de parcelas que deseja financiar o restante do valor:"))
+        let taxaDeJuros = 0.01
+        let valorDaParcela = parseInt(((valorDoCarro - entrada) / numeroDeParcelas) + (((valorDoCarro - entrada) / numeroDeParcelas) * taxaDeJuros))
+                
+        let i = 1
+
+        console.log("Com entrada de R$" + entrada + " seu financiamento ficará assim:")
+        
+        while (i <= numeroDeParcelas) {
+            console.log(i + " parcela: R$" + valorDaParcela)
+            i++
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
